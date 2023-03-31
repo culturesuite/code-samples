@@ -1,0 +1,54 @@
+@mixin light-mode() {
+        --background: $white,
+        --foreground: $offblack,
+        --nav-background: $white,
+        --nav-color: $offblack,
+        --card-background: $grey,
+        --primary-color: $offblack,
+        --text-color: $offblack,
+        --secondary-color: $neongreen,
+        --hover-color: darken($doelen_neongreen, 10%),
+        --link-color: $offblack,
+        --link-hover-color: darken($neongreen, 10%),
+        --link-underline-color: $neongreen,
+        --button-border-color: 1px solid $darkgreen,
+        --button-text-color: $darkgreen,
+        --button-color-background: $neongreen,
+        --button-hover-color: darken($neongreen, 10%),
+        --button-disabled-background: $lightgreen,
+        --button-disabled-color: $neongreen,
+}
+
+@mixin dark-mode() {
+        --background: $offblack,
+        --foreground: $white,
+        --nav-background: $white,
+        --nav-color: $darkgrey,
+        --card-background: $darkgrey,
+        --primary-color: $white,
+        --secondary-color: $neongreen,
+        --text-color: $white,
+        --hover-color: lighten($neongreen, 10%),
+        --link-color: $white,
+        --link-hover-color: lighten($neongreen, 10%),
+        --link-underline-color: $neongreen,
+        --button-border-color: 1px solid $darkgreen,
+        --button-text-color: $darkgreen,
+        --button-color-background: $neongreen,
+        --button-hover-color: lighten($neongreen, 10%),  
+        --button-disabled-background: $lightgreen,
+        --button-disabled-color: $darkgreen,
+}
+
+:root {
+    @include light-mode();
+    &:not([data-theme='light']) {
+        @media screen and (prefers-color-scheme: dark) {
+            @include dark-mode();
+        }
+    }
+
+    &[data-theme='dark'] {
+        @include dark-mode();
+    }
+}
