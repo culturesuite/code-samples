@@ -1,0 +1,66 @@
+/* ----------------------------------------------------------------
+    Fonts
+-----------------------------------------------------------------*/
+
+@import url('https://fast.fonts.net/t/1.css?apiType=css&projectid=f79d8773-31f7-4ee9-ac57-b86415512a85');
+@font-face{
+    font-family: 'Helvetica Neue Web'; /*LT W05_55 Roman*/
+    src: url('/Fonts/08edde9d-c27b-4731-a27f-d6cd9b01cd06.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Helvetica Neue Web'; /*LT W05_56 Italic*/
+    src: url('/Fonts/4fe1c328-1f21-434a-8f0d-5e0cf6c70dfb.woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face{
+    font-family: 'Helvetica Neue Web'; /*LT W01_75 Bold*/
+    src: url('/Fonts/5e8d493c-be01-44b9-962e-504a5cf10dd8.woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+$basicH1Fontsize: 64px;
+$basicH2Fontsize: 45px;
+$basicH3Fontsize: 32px;
+$basicH4Fontsize: 23px;
+$basicH5Fontsize: 19px;
+$basicH6Fontsize: 16px;
+
+/* ----------------------------------------------------------------
+    Colors
+-----------------------------------------------------------------*/
+$black: #000;
+$white: #FFF;
+
+$offblack: #101010;
+$darkgrey: #282828;
+$mediumgrey: #585858;
+$grey: #F6F5F4;
+
+$darkgreen: #014609;
+$neongreen: #59FD6D;
+$lightgreen: #E3FFE7;
+
+$darkblue: #1F2933;
+$mediumblue: #323F4B;
+$lightblue: #DBECFC;
+
+/* ----------------------------------------------------------------
+	Buttons
+-----------------------------------------------------------------*/
+
+$defaultBtnRadius: 0;
+$defaultBtnWidth: 11em;
+$defaultBtnPadding: 7px 12px;
+$defaultBtnBorder: 1px;
+$defaultBtnBorderDefault: $white;
+$defaultBtnBorderHover: none;
+$richtextLinkDecoration: underline;
+$richtextLinkDecorationHover: underline;
+
+$defaultBtnFontfamily: $fontNormal;
+$defaultBtnFontsize: 16px;
+$defaultBtnWeight: bold;
