@@ -7,6 +7,8 @@ let handler;
 export class FocusTrap {
     modal:HTMLElement;
 
+    // just adding a little comment here
+
     constructor(modal:HTMLElement) {
         this.modal = modal;
     }
